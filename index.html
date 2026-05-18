@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__container">
+            <h1 class="header__title"><i class="fas fa-code header__logo"></i>DAMIR</h1>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#history" class="nav__link">History</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero__content">
+                <img src="./images/logo2.jpg" alt="" class="hero__photo">
+                <h1 class="hero__title">Welcome to My Website</h1>
+                <p class="hero__subtitle">Frontend Development by Damir — Crafting the Future of Web Design!</p>
+                <div class="hero__buttons">
+                    <a href="tel:+79991234567" class="hero__button">Call Me</a>
+                    <button class="hero__button" onclick="window.location.href='#projects'">My Projects</button>
+                    <button class="hero__button" onclick="alert('Hi! I\'m Damir, let\'s get to know each other!')">Learn More</button>
+                </div>
+            </div>
+            <a href="#about" class="hero__scroll"><i class="fas fa-chevron-down"></i></a>
+        </section>
+
+        <section id="about" class="section section--about">
+            <img src="./images/logo1.jpg" alt="" class="about__photo">
+            <div class="about__content">
+                <h2 class="section__title">About Me</h2>
+                <p class="section__text">My name is Damir, I’m 15 years old, and my birthday is on March 24th. I’m passionate about frontend development, creating modern and user-friendly web interfaces using HTML, CSS, JavaScript, and I’m learning React for more complex projects. In my free time, I play soccer with friends and support PSG, especially during their Champions League matches. I also enjoy exploring UI design to make my websites look stylish and experimenting with tools like Vite. Sometimes, I unwind by playing strategy games to sharpen my logic. My dream is to become a top-tier developer and build projects that inspire the world!</p>
+                <button class="button" onclick="window.location.href='#contacts'">Contact Me!</button>
+            </div>
+        </section>
+
+        <section id="skills" class="section section--skills">
+            <h2 class="section__title">My Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item"><img class="icons2" src="./svg/html.svg" alt="">HTML</div>
+                <div class="skill-item"><img class="icons2" src="./svg/css.svg" alt="">CSS</div>
+                <div class="skill-item"><img class="icons2" src="./svg/js.svg" alt="">JS </div>
+                <div class="skill-item"><img class="icons2" src="./svg/react.svg" alt="">React</div>
+            </div>
+        </section>
+
+        <section id="history" class="section section--history">
+            <h2 class="section__title">My Journey — 3 Timeline Blocks</h2>
+            <div class="history-item">July – Sep 2024: I started learning HTML and CSS.</div>
+            <div class="history-item">Oct 2024 – Feb 2025: Mastered JavaScript and created an interactive project.</div>
+            <div class="history-item">Mar – May 2025: Learning React and working on this portfolio.</div>
+        </section>
+
+        <section id="projects" class="section section--projects">
+            <h2 class="section__title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-box">
+                    <a href="https://wnk1337.github.io/vue-cinemas/" target="_blank">
+                        <img class="project-image" src="./images/bg1.png" alt=""/>
+                      </a>                      
+                    <h3 class="project-title">Project 1</h3>
+                    <p class="project-description"> Vue Cinemas – A movie website built with Vue.js where users can explore popular films and get detailed information about each one.                    </p>
+                </div>
+                <div class="project-box">
+                    <a href="https://wnk1337.github.io/Airpods/" target="_blank">
+                        <img class="project-image" src="./images/bg2.png" alt=""/>
+                      </a>
+                    <h3 class="project-title">Project 2</h3>
+                    <p class="project-description">AirPods Pro – A clean Apple-style product page for AirPods Pro, showcasing technical specifications and modern UI design.</p>
+                </div>
+                <div class="project-box">
+                    <a href="https://wnk1337.github.io/go_trip/" target="_blank">
+                        <img class="project-image" src="./images/bg3.png" alt=""/>
+                      </a>
+                    <h3 class="project-title">Project 3</h3>
+                    <p class="project-description">Go Trip – A stylish landing page about hiking adventures, and or went our where users can explore trips and purchase outdoor gear.</p>
+                </div>
+                <div class="project-box">
+                    <a href="https://wnk1337.github.io/about-me/" target="_blank">
+                        <img class="project-image" src="./images/bg4.png" alt=""/>
+                      </a>
+                    <h3 class="project-title">Project 4</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum cum totam id hic quas quae ea aliquid, magnam praesentium?</p>
+                </div>
+            </div>
+            <button class="button" onclick="alert('More projects coming soon!')">View All</button>
+        </section>
+
+        <section id="blog" class="section section--blog">
+            <h2 class="section__title">My Blog</h2>
+            <div class="blog-item">
+                <h3>My First Post</h3>
+                <p>How I started learning frontend and what inspires me (July 18, 2024).</p>
+            </div>
+            <div class="blog-item">
+                <h3>What is JavaScript?</h3>
+                <p>I learned about it with the help of my teacher Ruslan.(Nov 23, 2024)</p>
+            </div>
+            <div class="blog-item">
+                <h3>My place of study</h3>
+                <p>I study at Proweb in the Oybek area, with my friend Asilbek.(March 12, 2025)</p>
+            </div>
+            <div class="blog-item">
+                <h3>Finish?</h3>
+                <p>I am finishing my studies and doing my diploma work.(May 18, 2025)</p>
+            </div>
+            <button class="button" onclick="window.location.href='#contacts'">Read Blog</button>
+        </section>
+
+        <section id="contacts" class="section section--contacts">
+            <h2 class="section__title">Get in Touch</h2>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <img class="icons" src="./images/email.svg" alt="">
+                    <p><a onclick="" href="">Email</a></p>
+                </div>
+                <div class="contact-card">
+                    <img class="icons" src="./images/github.svg" alt="">
+                    <p><a onclick="https://github.com/wnk1337" href="">GitHub</a></p>
+                </div>
+                <div class="contact-card">
+                    <img class="icons" src="./images/telegram.svg" alt="">
+                    <p><a onclick="https://web.telegram.org/@damirkka" href="">Telegram</a></p>
+                </div>
+                <div class="contact-card">
+                    <img class="icons" src="./images/insta.svg" alt="">
+                    <p><a onclick="https://www.instagram.com/zdo737?igsh=MTVwMHB6dDgwemhnaA==" href="">Instagram</a></p>
+                </div>
+            </div>
+            <button class="button" onclick="alert('Thanks for reaching out!')">Send Message</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__text">© 2025 Damir. All rights reserved. Made with ♥<i class="fas fa-heart" style="color: #ff7e5f;"></i></p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('header--scrolled');
+            } else {
+                header.classList.remove('header--scrolled');
+            }
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
